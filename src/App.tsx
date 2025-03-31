@@ -5,7 +5,7 @@ import { AuthProvider } from './lib/auth';
 import { AuthForm } from './components/AuthForm';
 import { Dashboard } from './components/Dashboard';
 
-// Commented out PrivateRoute since we're bypassing authentication
+// Commented out PrivateRoute since we're bypassing authentication.
 /* 
 function PrivateRoute({ children }: { children: React.ReactNode }) {
   const { user, loading } = useAuth();
