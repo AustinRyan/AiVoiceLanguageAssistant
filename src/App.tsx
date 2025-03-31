@@ -1,11 +1,12 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Languages, Mic, MessageSquare } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
-import { AuthProvider, useAuth } from './lib/auth';
+import { AuthProvider } from './lib/auth';
 import { AuthForm } from './components/AuthForm';
 import { Dashboard } from './components/Dashboard';
 
+// Commented out PrivateRoute since we're bypassing authentication
+/* 
 function PrivateRoute({ children }: { children: React.ReactNode }) {
   const { user, loading } = useAuth();
 
@@ -23,10 +24,10 @@ function PrivateRoute({ children }: { children: React.ReactNode }) {
 
   return <>{children}</>;
 }
+*/
 
 function LandingPage() {
   const navigate = useNavigate();
-  const { user } = useAuth();
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
@@ -75,10 +76,10 @@ function LandingPage() {
 
         <div className="text-center mt-16">
           <button
-            onClick={() => navigate(user ? '/dashboard' : '/login')}
+            onClick={() => navigate('/dashboard')}
             className="bg-blue-600 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors"
           >
-            {user ? 'Go to Dashboard' : 'Get Started'}
+            Try It Out
           </button>
         </div>
       </div>
@@ -93,14 +94,8 @@ function App() {
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/login" element={<AuthForm />} />
-          <Route
-            path="/dashboard"
-            element={
-              <PrivateRoute>
-                <Dashboard />
-              </PrivateRoute>
-            }
-          />
+          {/* Removed PrivateRoute to allow direct access */}
+          <Route path="/dashboard" element={<Dashboard />} />
         </Routes>
       </Router>
     </AuthProvider>
