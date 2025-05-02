@@ -37,8 +37,8 @@ function LandingPage() {
             AI Language Learning Assistant
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Master any language through interactive conversations with our AI tutor.
-            Get real-time feedback and personalized lessons.
+            Master any language through interactive conversations with our AI tutor
+            Get real-time feedback and personalized lessons
           </p>
         </div>
 
