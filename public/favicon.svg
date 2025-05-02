@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Brain outline representing AI -->
+  <path d="M16 4C10.5 4 6 8.5 6 14C6 17.1 7.4 19.9 9.8 21.7C10 21.8 10.1 22.1 10 22.3L8.9 25.4C8.8 25.7 9 26 9.3 26H12C12.1 26 12.2 26.1 12.3 26.1L15.8 28.9C15.9 29 16.1 29 16.2 28.9L19.7 26.1C19.8 26 19.9 26 20 26H22.7C23 26 23.2 25.7 23.1 25.4L22 22.3C21.9 22 22 21.8 22.2 21.7C24.6 19.9 26 17.1 26 14C26 8.5 21.5 4 16 4Z" stroke="#4B5FF7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Speech bubble representing language -->
+  <path d="M19 12H13C12.4 12 12 12.4 12 13V17C12 17.6 12.4 18 13 18H16L18.5 20.5C18.8 20.8 19.3 20.6 19.3 20.2V18H19C19.6 18 20 17.6 20 17V13C20 12.4 19.6 12 19 12Z" fill="#4B5FF7"/>
+  
+  <!-- Circuit lines representing AI connections -->
+  <path d="M10 14H11" stroke="#4B5FF7" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M21 14H22" stroke="#4B5FF7" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M16 8V9" stroke="#4B5FF7" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M13 11L12 10" stroke="#4B5FF7" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M19 11L20 10" stroke="#4B5FF7" stroke-width="1.5" stroke-linecap="round"/>
+</svg>
